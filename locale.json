@@ -1,6 +1,6 @@
 {
     "ru": {
-        "title": "Умный дневник активности с тегами",
+        "title": "Completed Task",
         "tab_main": "📅 Дневник на неделю",
         "tab_chart": "📊 Хронология активности",
         "tab_search": "🔍 Архив и Поиск",
@@ -44,10 +44,11 @@
         "tooltip_labels": "Метки",
         "tooltip_no_labels": "Нет тегов",
         "days": ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"],
-        "months": ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
+        "months": ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
+        "calender": "📂 Календарь (.ics)"
     },
     "en": {
-        "title": "Smart Activity Diary with Tags",
+        "title": "Completed Task",
         "tab_main": "📅 Weekly Diary",
         "tab_chart": "📊 Activity Timeline",
         "tab_search": "🔍 Archive & Search",
@@ -91,10 +92,11 @@
         "tooltip_labels": "Labels",
         "tooltip_no_labels": "No tags",
         "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+        "calender": "📂 Calendar (.ics)"
     },
     "de": {
-        "title": "Smartes Aktivitätstagebuch mit Tags",
+        "title": "Completed Task",
         "tab_main": "📅 Wochentagebuch",
         "tab_chart": "📊 Aktivitäts-Chronologie",
         "tab_search": "🔍 Archiv & Suche",
@@ -138,10 +140,11 @@
         "tooltip_labels": "Labels",
         "tooltip_no_labels": "Keine Tags",
         "days": ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"],
-        "months": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+        "months": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+        "calender": "📂 Kalender (.ics)"
     },
-    "uk": {
-        "title": "Розумний щоденник активності з тегами",
+    "ua": {
+        "title": "Completed Task",
         "tab_main": "📅 Щоденник на тиждень",
         "tab_chart": "📊 Хронологія активності",
         "tab_search": "🔍 Архів та Пошук",
@@ -185,6 +188,7 @@
         "tooltip_labels": "Мітки",
         "tooltip_no_labels": "Немає тегів",
         "days": ["Понеділок", "Вівторок", "Середа", "Четвер", "П'ятниця", "Субота", "Неділя"],
-        "months": ["Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"]
+        "months": ["Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"],
+        "calender": "📂 Календар (.ics)"
     }
 }
