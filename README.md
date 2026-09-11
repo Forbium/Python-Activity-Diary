@@ -21,7 +21,7 @@ A lightweight, cross-platform desktop application built with Python and Tkinter 
 1. Clone this repository:
    ```bash
    git clone https://github.com
-   cd smart-activity-diary
+   cd completed-tasks
    ```
 2. Install the required dependencies:
    ```bash
@@ -39,7 +39,7 @@ Go to the [Releases](https://github.com) page, download the latest zipped versio
 
 ## 📂 Project Structure
 
-- `activity_diary.py` — Main Python application source code.
+- `activity_diary.pyw` — Main Python application source code.
 - `locale.json` — Translation files containing dictionaries for all supported languages.
 - `diary_data.json` — Local database file storing your tasks in JSON format (created automatically).
 - `requirements.txt` — List of external Python package dependencies.
