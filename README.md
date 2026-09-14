@@ -1,16 +1,19 @@
-# 📅 Smart Activity Diary with Tags
+# 📅 Smart Activity Diary with Multi-Tagging (iCalendar Edition)
 
-A lightweight, cross-platform desktop application built with Python and Tkinter designed to track your weekly activities, organize them via interactive multi-tagging system, and analyze your productivity over time.
+A lightweight, cross-platform desktop application built with Python and Tkinter, designed to track weekly activities, organize them via an interactive multi-tagging system, and analyze productivity over time. 
+
+This version features a modern **Model-View-Controller (MVC)** split-architecture and natively utilizes the international **iCalendar (`.ics`)** standard for data storage.
 
 ---
 
 ## ✨ Key Features
 
-- **🌐 Multi-language Support:** Instantly switches between **English**, **Deutsch**, **Русский**, and **Українська** directly from the UI without restarting.
-- **🏷️ Advanced Multi-Tagging:** Attach multiple contexts (e.g., `#server`, `#database`, `#work`) to a single task using an interactive checkbox panel with live autocomplete filter.
-- **📊 Interactive Chronology Chart:** Dynamic timeline visualization powered by Matplotlib. Toggle visibility of specific tag streams using checkbuttons and view day-by-day subtask tooltips on hover.
+- **📂 Universal iCalendar Standard:** Natively reads and writes data to `.ics` files. Your tasks, timestamps, and tags (stored in the official `CATEGORIES` field) seamlessly sync with Google Calendar, Outlook, and Apple Calendar.
+- **🌐 Dynamic Multi-language UI:** Instantly switches between **English**, **Deutsch**, **Русский**, and **Українська** directly from the settings panel on the fly.
+- **⚡ Flicker-Free Performance:** Advanced (targeted) widget rendering updates specific element colors instantly without jarring screen flashes.
+- **📊 Interactive Chronology Chart:** Dynamic timeline visualization powered by Matplotlib. Toggle specific tag streams using checkbuttons and view day-by-day subtask tooltips on hover.
 - **📥 One-Click Excel Export:** Download your entire diary archive or currently filtered search results into a clean, formatted `.xlsx` spreadsheet.
-- **🔒 Non-intrusive Layout:** Clean UI with strict column proportions that seamlessly adapters to any window resizing, featuring scrollable daily slots and hidden scrollbars.
+- **🔒 Non-intrusive Layout:** Clean UI with strict column proportions that seamlessly adapts to window resizing, featuring scrollable daily slots and hidden scrollbars.
 
 ---
 
@@ -21,25 +24,28 @@ A lightweight, cross-platform desktop application built with Python and Tkinter 
 1. Clone this repository:
    ```bash
    git clone https://github.com
-   cd completed-tasks
+   cd smart-activity-diary
    ```
 2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Run the application:
+3. Run the desktop application:
    ```bash
    python activity_diary.py
    ```
 
-### Option 2: Pre-compiled Portable Binary (No Python required)
-Go to the [Releases](https://github.com) page, download the latest zipped version for Windows, extract it, and run the `activity_diary.exe` file.
-
 ---
 
-## 📂 Project Structure
+## 📂 Project Architecture
 
-- `activity_diary.pyw` — Main Python application source code.
-- `locale.json` — Translation files containing dictionaries for all supported languages.
-- `diary_data.json` — Local database file storing your tasks in JSON format (created automatically).
-- `requirements.txt` — List of external Python package dependencies.
+The codebase is strictly separated to support easy migration to mobile platforms (like Flet or Kivy) in the future:
+
+- `completed_tasks.pyw` — **Frontend/GUI Layer**. Handles native Tkinter windows, events, widgets, and Matplotlib canvas.
+- `tasks_backend.py` — **Backend/Core Logic Layer**. Pure Python module that manages disk I/O, `.json` configuration files, and parses `.ics` streams.
+- `locale.json` — Translation dictionaries for all supported languages.
+- `diary_config.json` — Local application settings (automatically created).
+- `diary_tasks.ics` — The core universal database file (automatically created).
+- `requirements.txt` — External Python package dependencies list.
+
+---
